@@ -38,3 +38,10 @@ function floatingText() {
 createConfetti();
 animateHeart();
 floatingText();
+function moveButton() {
+    const button = document.querySelector('.no');
+    const maxX = window.innerWidth - 100;
+    const maxY = window.innerHeight - 50;
+    button.style.left = Math.random() * maxX + 'px';
+    button.style.top = Math.random() * maxY + 'px';
+}
